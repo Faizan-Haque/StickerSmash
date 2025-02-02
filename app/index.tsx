@@ -6,7 +6,7 @@ export default function Index() {
     <View style={styles.container}>
 
       <Text style={styles.text}>
-        Hello World!
+        Hello World! edited
       </Text>
 
       <Link href='/about' style={styles.button}>
