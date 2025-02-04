@@ -1,5 +1,4 @@
-import { Text, View, StyleSheet } from "react-native";
-import { Link } from 'expo-router';
+import { View, StyleSheet } from "react-native";
 import { Image } from 'expo-image';
 
 const PlaceholderImage = require('@/assets/images/background-image.png')
@@ -22,10 +21,6 @@ const styles = StyleSheet.create({
     backgroundColor:'#25292e',
     justifyContent: "center",
     alignItems: "center",
-  },
-
-  text: {
-    color: '#fff'
   },
 
   imageContainer: {
