@@ -1,4 +1,5 @@
 import { View, StyleSheet } from "react-native";
+import * as ImagePicker from 'expo-image-picker';
 
 import Button from "@/components/Button";
 import ImageViewer from '@/components/ImageViewer';
@@ -6,6 +7,11 @@ import ImageViewer from '@/components/ImageViewer';
 const PlaceholderImage = require('@/assets/images/background-image.png')
 
 export default function Index() {
+
+  const pickImageAsync = async () => {
+    let result = await ImagePicker.launchImageLibraryAsync 
+  }
+
   return (
     <View style={styles.container}>
 
@@ -14,7 +20,7 @@ export default function Index() {
       </View>
 
       <View style = {styles.footerContainer}>
-        <Button label='Choose a photo' />
+        <Button theme='primary' label='Choose a photo' />
         <Button label='Use this photo' />
       </View>
 
